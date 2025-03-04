@@ -1,0 +1,4 @@
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles/main.dir
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles/generate_clang_complete.dir
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles/edit_cache.dir
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles/rebuild_cache.dir
