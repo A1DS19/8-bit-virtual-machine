@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 #include "SDL2/SDL.h"
+#include "SDL2/SDL_rect.h"
+#include "SDL2/SDL_render.h"
 
 int main(int argc, char *argv[]) {
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
@@ -9,7 +11,6 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  // Create a window
   SDL_Window *window =
       SDL_CreateWindow("Chip 8 VM",             // Window title
                        SDL_WINDOWPOS_UNDEFINED, // Initial x position (centered)
@@ -27,23 +28,32 @@ int main(int argc, char *argv[]) {
 
   printf("Window created successfully!\n");
 
-  // Event loop
-  int running = 1; // Flag to keep the program running
+  int running = 1;
   SDL_Event event;
+  SDL_Renderer *renderer =
+      SDL_CreateRenderer(window, -1, SDL_TEXTUREACCESS_TARGET);
 
   while (running) {
-    // Process events
     while (SDL_PollEvent(&event)) {
       if (event.type == SDL_QUIT) {
-        // Exit the loop when the user closes the window
+        printf("goodbye");
         running = 0;
       }
     }
 
-    // Add rendering code here if needed
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+    SDL_RenderClear(renderer);
+
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 0);
+    SDL_Rect rectangle;
+    rectangle.x = 0;
+    rectangle.y = 0;
+    rectangle.h = 40;
+    rectangle.w = 40;
+    SDL_RenderFillRect(renderer, &rectangle);
+    SDL_RenderPresent(renderer);
   }
 
-  // Clean up
   SDL_DestroyWindow(window);
   SDL_Quit();
 
