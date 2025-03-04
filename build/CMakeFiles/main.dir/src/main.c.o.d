@@ -193,4 +193,6 @@ CMakeFiles/main.dir/src/main.c.o: \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_locale.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_misc.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h \
-  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h

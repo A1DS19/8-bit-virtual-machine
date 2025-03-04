@@ -142,6 +142,30 @@ generate_clang_complete/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_clang_complete.dir/build.make CMakeFiles/generate_clang_complete.dir/build
 .PHONY : generate_clang_complete/fast
 
+src/chip8_memory.o: src/chip8_memory.c.o
+.PHONY : src/chip8_memory.o
+
+# target to build an object file
+src/chip8_memory.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_memory.c.o
+.PHONY : src/chip8_memory.c.o
+
+src/chip8_memory.i: src/chip8_memory.c.i
+.PHONY : src/chip8_memory.i
+
+# target to preprocess a source file
+src/chip8_memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_memory.c.i
+.PHONY : src/chip8_memory.c.i
+
+src/chip8_memory.s: src/chip8_memory.c.s
+.PHONY : src/chip8_memory.s
+
+# target to generate assembly for a file
+src/chip8_memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_memory.c.s
+.PHONY : src/chip8_memory.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -176,6 +200,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... generate_clang_complete"
 	@echo "... main"
+	@echo "... src/chip8_memory.o"
+	@echo "... src/chip8_memory.i"
+	@echo "... src/chip8_memory.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
