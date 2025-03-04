@@ -193,8 +193,12 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_version.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_video.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/begin_code.h \
-  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/close_code.h
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/close_code.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/close_code.h:
 
@@ -279,6 +283,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_suseconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_size_t.h:
 

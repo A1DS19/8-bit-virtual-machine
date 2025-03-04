@@ -195,4 +195,6 @@ CMakeFiles/main.dir/src/main.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_video.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/begin_code.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/close_code.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
