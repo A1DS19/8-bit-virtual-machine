@@ -1,2 +1,2 @@
-### 8-bit virtual machine in C
+### chip8 virtual machine in C
 Currently only works on macos
