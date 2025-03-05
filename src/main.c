@@ -5,13 +5,15 @@
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
 #include "chip8.h"
+#include "chip8_stack.h"
 
 int main(int argc, char *argv[]) {
   chip8 chip8;
-  chip8.registers.V[0] = 100;
-  printf("%us\n", chip8.registers.V[0]);
-  chip8_memory_set(&chip8.memory, 50, 'z');
-  printf("%c\n", chip8_memory_get(&chip8.memory, 10));
+  chip8.registers.SP = 0;
+  chip8_stack_push(&chip8, 0XFF);
+  chip8_stack_push(&chip8, 0Xaa);
+  printf("%x\n", chip8_stack_pop(&chip8));
+  printf("%x\n", chip8_stack_pop(&chip8));
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
