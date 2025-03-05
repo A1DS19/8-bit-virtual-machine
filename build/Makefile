@@ -142,6 +142,54 @@ generate_clang_complete/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_clang_complete.dir/build.make CMakeFiles/generate_clang_complete.dir/build
 .PHONY : generate_clang_complete/fast
 
+src/chip8.o: src/chip8.c.o
+.PHONY : src/chip8.o
+
+# target to build an object file
+src/chip8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8.c.o
+.PHONY : src/chip8.c.o
+
+src/chip8.i: src/chip8.c.i
+.PHONY : src/chip8.i
+
+# target to preprocess a source file
+src/chip8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8.c.i
+.PHONY : src/chip8.c.i
+
+src/chip8.s: src/chip8.c.s
+.PHONY : src/chip8.s
+
+# target to generate assembly for a file
+src/chip8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8.c.s
+.PHONY : src/chip8.c.s
+
+src/chip8_keyboard.o: src/chip8_keyboard.c.o
+.PHONY : src/chip8_keyboard.o
+
+# target to build an object file
+src/chip8_keyboard.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_keyboard.c.o
+.PHONY : src/chip8_keyboard.c.o
+
+src/chip8_keyboard.i: src/chip8_keyboard.c.i
+.PHONY : src/chip8_keyboard.i
+
+# target to preprocess a source file
+src/chip8_keyboard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_keyboard.c.i
+.PHONY : src/chip8_keyboard.c.i
+
+src/chip8_keyboard.s: src/chip8_keyboard.c.s
+.PHONY : src/chip8_keyboard.s
+
+# target to generate assembly for a file
+src/chip8_keyboard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_keyboard.c.s
+.PHONY : src/chip8_keyboard.c.s
+
 src/chip8_memory.o: src/chip8_memory.c.o
 .PHONY : src/chip8_memory.o
 
@@ -224,6 +272,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... generate_clang_complete"
 	@echo "... main"
+	@echo "... src/chip8.o"
+	@echo "... src/chip8.i"
+	@echo "... src/chip8.s"
+	@echo "... src/chip8_keyboard.o"
+	@echo "... src/chip8_keyboard.i"
+	@echo "... src/chip8_keyboard.s"
 	@echo "... src/chip8_memory.o"
 	@echo "... src/chip8_memory.i"
 	@echo "... src/chip8_memory.s"

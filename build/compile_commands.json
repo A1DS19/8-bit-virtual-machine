@@ -1,6 +1,18 @@
 [
 {
   "directory": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/main.dir/src/chip8.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c",
+  "file": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c",
+  "output": "CMakeFiles/main.dir/src/chip8.c.o"
+},
+{
+  "directory": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/main.dir/src/chip8_keyboard.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c",
+  "file": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c",
+  "output": "CMakeFiles/main.dir/src/chip8_keyboard.c.o"
+},
+{
+  "directory": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/main.dir/src/chip8_memory.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_memory.c",
   "file": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_memory.c",
   "output": "CMakeFiles/main.dir/src/chip8_memory.c.o"

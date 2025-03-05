@@ -8,4 +8,6 @@ CMakeFiles/main.dir/src/chip8_stack.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
-  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h

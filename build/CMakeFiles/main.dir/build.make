@@ -72,10 +72,38 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/codegen:
 .PHONY : CMakeFiles/main.dir/codegen
 
+CMakeFiles/main.dir/src/chip8.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/chip8.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c
+CMakeFiles/main.dir/src/chip8.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/chip8.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/chip8.c.o -MF CMakeFiles/main.dir/src/chip8.c.o.d -o CMakeFiles/main.dir/src/chip8.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c
+
+CMakeFiles/main.dir/src/chip8.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/chip8.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c > CMakeFiles/main.dir/src/chip8.c.i
+
+CMakeFiles/main.dir/src/chip8.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/chip8.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c -o CMakeFiles/main.dir/src/chip8.c.s
+
+CMakeFiles/main.dir/src/chip8_keyboard.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/chip8_keyboard.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c
+CMakeFiles/main.dir/src/chip8_keyboard.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/chip8_keyboard.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/chip8_keyboard.c.o -MF CMakeFiles/main.dir/src/chip8_keyboard.c.o.d -o CMakeFiles/main.dir/src/chip8_keyboard.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c
+
+CMakeFiles/main.dir/src/chip8_keyboard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/chip8_keyboard.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c > CMakeFiles/main.dir/src/chip8_keyboard.c.i
+
+CMakeFiles/main.dir/src/chip8_keyboard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/chip8_keyboard.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c -o CMakeFiles/main.dir/src/chip8_keyboard.c.s
+
 CMakeFiles/main.dir/src/chip8_memory.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/chip8_memory.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_memory.c
 CMakeFiles/main.dir/src/chip8_memory.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/chip8_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/chip8_memory.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/chip8_memory.c.o -MF CMakeFiles/main.dir/src/chip8_memory.c.o.d -o CMakeFiles/main.dir/src/chip8_memory.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_memory.c
 
 CMakeFiles/main.dir/src/chip8_memory.c.i: cmake_force
@@ -89,7 +117,7 @@ CMakeFiles/main.dir/src/chip8_memory.c.s: cmake_force
 CMakeFiles/main.dir/src/chip8_stack.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/chip8_stack.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c
 CMakeFiles/main.dir/src/chip8_stack.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/chip8_stack.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/src/chip8_stack.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/chip8_stack.c.o -MF CMakeFiles/main.dir/src/chip8_stack.c.o.d -o CMakeFiles/main.dir/src/chip8_stack.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c
 
 CMakeFiles/main.dir/src/chip8_stack.c.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/main.dir/src/chip8_stack.c.s: cmake_force
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/main.c
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/src/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
@@ -116,6 +144,8 @@ CMakeFiles/main.dir/src/main.c.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/chip8.c.o" \
+"CMakeFiles/main.dir/src/chip8_keyboard.c.o" \
 "CMakeFiles/main.dir/src/chip8_memory.c.o" \
 "CMakeFiles/main.dir/src/chip8_stack.c.o" \
 "CMakeFiles/main.dir/src/main.c.o"
@@ -123,13 +153,15 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/src/chip8.c.o
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/src/chip8_keyboard.c.o
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/src/chip8_memory.c.o
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/src/chip8_stack.c.o
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/src/main.c.o
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/build.make
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: /opt/homebrew/Cellar/sdl2/2.32.2/lib/libSDL2.dylib
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,19 +1,23 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "SDL2/SDL.h"
+#include "SDL2/SDL_events.h"
+#include "SDL2/SDL_keycode.h"
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
 #include "chip8.h"
-#include "chip8_stack.h"
+#include "chip8_keyboard.h"
+#include "config.h"
+
+const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
+    SDLK_0, SDLK_1, SDLK_3, SDLK_4, SDLK_5, SDLK_6, SDLK_7, SDLK_8,
+    SDLK_9, SDLK_a, SDLK_b, SDLK_c, SDLK_d, SDLK_e, SDLK_f};
 
 int main(int argc, char *argv[]) {
   chip8 chip8;
-  chip8.registers.SP = 0;
-  chip8_stack_push(&chip8, 0XFF);
-  chip8_stack_push(&chip8, 0Xaa);
-  printf("%x\n", chip8_stack_pop(&chip8));
-  printf("%x\n", chip8_stack_pop(&chip8));
+  chip8_init(&chip8);
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
@@ -35,8 +39,6 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  printf("Window created successfully!\n");
-
   int running = 1;
   SDL_Event event;
   SDL_Renderer *renderer =
@@ -44,9 +46,27 @@ int main(int argc, char *argv[]) {
 
   while (running) {
     while (SDL_PollEvent(&event)) {
-      if (event.type == SDL_QUIT) {
-        printf("goodbye");
+      switch (event.type) {
+      case SDL_QUIT:
         running = 0;
+        break;
+
+      case SDL_KEYDOWN: {
+        char key = event.key.keysym.sym;
+        int vkey = chip8_keyboard_map(keyboard_map, key);
+        if (vkey != -1) {
+          chip8_keyboard_down(&chip8.keyboard, vkey);
+        }
+      } break;
+
+      case SDL_KEYUP: {
+        char key = event.key.keysym.sym;
+        int vkey = chip8_keyboard_map(keyboard_map, key);
+        if (vkey != -1) {
+          chip8_keyboard_up(&chip8.keyboard, vkey);
+        }
+
+      } break;
       }
     }
 

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c" "CMakeFiles/main.dir/src/chip8.c.o" "gcc" "CMakeFiles/main.dir/src/chip8.c.o.d"
+  "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_keyboard.c" "CMakeFiles/main.dir/src/chip8_keyboard.c.o" "gcc" "CMakeFiles/main.dir/src/chip8_keyboard.c.o.d"
   "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_memory.c" "CMakeFiles/main.dir/src/chip8_memory.c.o" "gcc" "CMakeFiles/main.dir/src/chip8_memory.c.o.d"
   "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c" "CMakeFiles/main.dir/src/chip8_stack.c.o" "gcc" "CMakeFiles/main.dir/src/chip8_stack.c.o.d"
   "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"

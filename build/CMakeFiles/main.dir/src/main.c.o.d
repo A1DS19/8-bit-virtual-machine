@@ -1,5 +1,6 @@
 CMakeFiles/main.dir/src/main.c.o: \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/main.c \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
@@ -196,4 +197,5 @@ CMakeFiles/main.dir/src/main.c.o: \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
-  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h
