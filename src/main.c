@@ -19,7 +19,7 @@ const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
 int main(int argc, char *argv[]) {
   chip8 chip8;
   chip8_init(&chip8);
-  chip8_screen_set(&chip8.screen, 0, 0);
+  chip8_screen_draw_sprite(&chip8.screen, 0, 0, &chip8.memory.memory[0x00], 5);
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
