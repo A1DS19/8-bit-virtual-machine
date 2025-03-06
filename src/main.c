@@ -9,6 +9,7 @@
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
 #include "chip8.h"
+#include "chip8_audio.h"
 #include "chip8_keyboard.h"
 #include "chip8_screen.h"
 #include "config.h"
@@ -18,15 +19,29 @@ const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
     SDLK_9, SDLK_a, SDLK_b, SDLK_c, SDLK_d, SDLK_e, SDLK_f};
 
 int main(int argc, char *argv[]) {
+  SDL_AudioSpec desired_spec;
+  SDL_zero(desired_spec);
+  desired_spec.freq = SAMPLE_RATE;
+  desired_spec.format = AUDIO_S16SYS;
+  desired_spec.channels = 1;
+  desired_spec.samples = 4096;
+  desired_spec.callback = audio_callback;
+
   chip8 chip8;
   chip8_init(&chip8);
-  chip8.registers.delay_timer = 255;
+  chip8.registers.sound_timer = 255;
 
   chip8_screen_draw_sprite(&chip8.screen, 0, 0, &chip8.memory.memory[0x00], 5);
 
-  if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+  if (SDL_Init(SDL_INIT_EVERYTHING)) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
     return EXIT_FAILURE;
+  }
+
+  if (SDL_OpenAudio(&desired_spec, NULL) < 0) {
+    fprintf(stderr, "Could not open audio: %s\n", SDL_GetError());
+    SDL_Quit();
+    return 1;
   }
 
   SDL_Window *window =
@@ -98,9 +113,15 @@ int main(int argc, char *argv[]) {
       usleep(100000);
       chip8.registers.delay_timer -= 1;
     }
+
+    if (chip8.registers.sound_timer > 0) {
+      SDL_PauseAudio(0);
+    }
   }
 
   SDL_DestroyWindow(window);
+  SDL_CloseAudio();
+
   SDL_Quit();
 
   return EXIT_SUCCESS;

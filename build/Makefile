@@ -166,6 +166,30 @@ src/chip8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8.c.s
 .PHONY : src/chip8.c.s
 
+src/chip8_audio.o: src/chip8_audio.c.o
+.PHONY : src/chip8_audio.o
+
+# target to build an object file
+src/chip8_audio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_audio.c.o
+.PHONY : src/chip8_audio.c.o
+
+src/chip8_audio.i: src/chip8_audio.c.i
+.PHONY : src/chip8_audio.i
+
+# target to preprocess a source file
+src/chip8_audio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_audio.c.i
+.PHONY : src/chip8_audio.c.i
+
+src/chip8_audio.s: src/chip8_audio.c.s
+.PHONY : src/chip8_audio.s
+
+# target to generate assembly for a file
+src/chip8_audio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_audio.c.s
+.PHONY : src/chip8_audio.c.s
+
 src/chip8_keyboard.o: src/chip8_keyboard.c.o
 .PHONY : src/chip8_keyboard.o
 
@@ -299,6 +323,9 @@ help:
 	@echo "... src/chip8.o"
 	@echo "... src/chip8.i"
 	@echo "... src/chip8.s"
+	@echo "... src/chip8_audio.o"
+	@echo "... src/chip8_audio.i"
+	@echo "... src/chip8_audio.s"
 	@echo "... src/chip8_keyboard.o"
 	@echo "... src/chip8_keyboard.i"
 	@echo "... src/chip8_keyboard.s"
