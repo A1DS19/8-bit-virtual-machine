@@ -115,6 +115,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h \
@@ -152,6 +153,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blkcnt_t.h \
@@ -188,6 +190,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_posix_vdisable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_seek_set.h \
@@ -210,17 +213,21 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_wint_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/appleapiopts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wchar.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_bf16.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_neon.h \
@@ -291,8 +298,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/close_code.h:
 
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/begin_code.h:
-
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_video.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_timer.h:
@@ -301,9 +306,15 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_shape.h:
 
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_sensor.h:
+
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_scancode.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_render.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_rect.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_quit.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_mouse.h:
 
@@ -355,7 +366,21 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/wchar.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/unistd.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/time.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_clipboard.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/unistd.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_locale.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/select.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h:
 
@@ -377,6 +402,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_version.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_posix_vdisable.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_char.h:
@@ -394,10 +421,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_off_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_nlink_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/arch.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_locale.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_events.h:
 
@@ -446,6 +469,10 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ucontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blkcnt_t.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/begin_code.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_select.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_gamecontroller.h:
 
@@ -515,15 +542,13 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/mach/arm/_structs.h:
 
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_clipboard.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/libkern/arm/OSByteOrder.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/gethostuuid.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_time_t.h:
 
@@ -548,6 +573,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uintmax_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint32_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uuid_t.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_loadso.h:
 
@@ -615,8 +642,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int16_t.h:
 
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_rect.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityVersions.h:
@@ -679,8 +704,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h:
 
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_quit.h:
-
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_stdinc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h:
@@ -696,8 +719,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/secure/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int32_t.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_sensor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h:
 

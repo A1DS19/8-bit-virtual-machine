@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_events.h"
@@ -19,6 +20,8 @@ const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
 int main(int argc, char *argv[]) {
   chip8 chip8;
   chip8_init(&chip8);
+  chip8.registers.delay_timer = 255;
+
   chip8_screen_draw_sprite(&chip8.screen, 0, 0, &chip8.memory.memory[0x00], 5);
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
@@ -90,6 +93,12 @@ int main(int argc, char *argv[]) {
     }
 
     SDL_RenderPresent(renderer);
+
+    if (chip8.registers.delay_timer > 0) {
+      usleep(100000);
+      chip8.registers.delay_timer -= 1;
+      printf("delay\n");
+    }
   }
 
   SDL_DestroyWindow(window);

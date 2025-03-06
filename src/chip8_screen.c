@@ -29,7 +29,13 @@ bool chip8_screen_draw_sprite(chip8_screen *screen, int x, int y,
         continue;
       }
 
-      screen->pixels[ly + y][lx + x] = true;
+      if (screen->pixels[(ly + y) % CHIP8_SCREEN_HEIGHT]
+                        [(lx + x) % CHIP8_SCREEN_WIDTH]) {
+        pixel_collision = true;
+      }
+
+      screen->pixels[(ly + y) % CHIP8_SCREEN_HEIGHT]
+                    [(lx + x) % CHIP8_SCREEN_WIDTH] ^= true;
     }
   }
 
