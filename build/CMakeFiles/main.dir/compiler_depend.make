@@ -42,6 +42,7 @@ CMakeFiles/main.dir/src/chip8.c.o: /Users/jose.padilla/Desktop/courses/8-bit-vir
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
@@ -62,6 +63,15 @@ CMakeFiles/main.dir/src/chip8_memory.c.o: /Users/jose.padilla/Desktop/courses/8-
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
+CMakeFiles/main.dir/src/chip8_screen.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_screen.c \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
+
 CMakeFiles/main.dir/src/chip8_stack.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h \
@@ -72,6 +82,7 @@ CMakeFiles/main.dir/src/chip8_stack.c.o: /Users/jose.padilla/Desktop/courses/8-b
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
@@ -273,6 +284,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
@@ -287,9 +299,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_system.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_stdinc.h:
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_shape.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_scancode.h:
 
@@ -441,8 +451,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
-
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
@@ -463,6 +471,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_screen.c:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/runetype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/malloc/_malloc_type.h:
@@ -482,8 +492,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_wctype_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/endian.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_shape.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h:
 
@@ -615,6 +623,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types.h:
 
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_u_int64_t.h:
@@ -671,6 +681,10 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_quit.h:
 
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_stdinc.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/memory.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_hints.h:
@@ -686,5 +700,7 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_sensor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_errno_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8.c:

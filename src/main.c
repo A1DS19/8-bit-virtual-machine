@@ -9,6 +9,7 @@
 #include "SDL2/SDL_render.h"
 #include "chip8.h"
 #include "chip8_keyboard.h"
+#include "chip8_screen.h"
 #include "config.h"
 
 const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
@@ -18,6 +19,7 @@ const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
 int main(int argc, char *argv[]) {
   chip8 chip8;
   chip8_init(&chip8);
+  chip8_screen_set(&chip8.screen, 0, 0);
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
@@ -72,14 +74,21 @@ int main(int argc, char *argv[]) {
 
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
     SDL_RenderClear(renderer);
-
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 0);
-    SDL_Rect rectangle;
-    rectangle.x = 0;
-    rectangle.y = 0;
-    rectangle.h = 40;
-    rectangle.w = 40;
-    SDL_RenderFillRect(renderer, &rectangle);
+
+    for (int x = 0; x < CHIP8_SCREEN_WIDTH; x++) {
+      for (int y = 0; y < CHIP8_SCREEN_HEIGHT; y++) {
+        if (chip8_screen_is_set(&chip8.screen, x, y)) {
+          SDL_Rect rectangle;
+          rectangle.x = x * CHIP8_WINDOW_MULTIPLIER;
+          rectangle.y = y * CHIP8_WINDOW_MULTIPLIER;
+          rectangle.h = CHIP8_WINDOW_MULTIPLIER;
+          rectangle.w = CHIP8_WINDOW_MULTIPLIER;
+          SDL_RenderFillRect(renderer, &rectangle);
+        }
+      }
+    }
+
     SDL_RenderPresent(renderer);
   }
 

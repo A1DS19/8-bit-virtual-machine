@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/chip8_keyboard.c.o.d"
   "CMakeFiles/main.dir/src/chip8_memory.c.o"
   "CMakeFiles/main.dir/src/chip8_memory.c.o.d"
+  "CMakeFiles/main.dir/src/chip8_screen.c.o"
+  "CMakeFiles/main.dir/src/chip8_screen.c.o.d"
   "CMakeFiles/main.dir/src/chip8_stack.c.o"
   "CMakeFiles/main.dir/src/chip8_stack.c.o.d"
   "CMakeFiles/main.dir/src/main.c.o"

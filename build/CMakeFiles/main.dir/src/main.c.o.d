@@ -198,4 +198,5 @@ CMakeFiles/main.dir/src/main.c.o: \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h \
-  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h

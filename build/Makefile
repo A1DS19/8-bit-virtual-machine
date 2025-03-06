@@ -214,6 +214,30 @@ src/chip8_memory.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_memory.c.s
 .PHONY : src/chip8_memory.c.s
 
+src/chip8_screen.o: src/chip8_screen.c.o
+.PHONY : src/chip8_screen.o
+
+# target to build an object file
+src/chip8_screen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_screen.c.o
+.PHONY : src/chip8_screen.c.o
+
+src/chip8_screen.i: src/chip8_screen.c.i
+.PHONY : src/chip8_screen.i
+
+# target to preprocess a source file
+src/chip8_screen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_screen.c.i
+.PHONY : src/chip8_screen.c.i
+
+src/chip8_screen.s: src/chip8_screen.c.s
+.PHONY : src/chip8_screen.s
+
+# target to generate assembly for a file
+src/chip8_screen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/chip8_screen.c.s
+.PHONY : src/chip8_screen.c.s
+
 src/chip8_stack.o: src/chip8_stack.c.o
 .PHONY : src/chip8_stack.o
 
@@ -281,6 +305,9 @@ help:
 	@echo "... src/chip8_memory.o"
 	@echo "... src/chip8_memory.i"
 	@echo "... src/chip8_memory.s"
+	@echo "... src/chip8_screen.o"
+	@echo "... src/chip8_screen.i"
+	@echo "... src/chip8_screen.s"
 	@echo "... src/chip8_stack.o"
 	@echo "... src/chip8_stack.i"
 	@echo "... src/chip8_stack.s"

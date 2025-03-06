@@ -10,4 +10,5 @@ CMakeFiles/main.dir/src/chip8_stack.c.o: \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h

@@ -19,6 +19,12 @@
 },
 {
   "directory": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/main.dir/src/chip8_screen.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_screen.c",
+  "file": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_screen.c",
+  "output": "CMakeFiles/main.dir/src/chip8_screen.c.o"
+},
+{
+  "directory": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/main.dir/src/chip8_stack.c.o -c /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c",
   "file": "/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c",
   "output": "CMakeFiles/main.dir/src/chip8_stack.c.o"

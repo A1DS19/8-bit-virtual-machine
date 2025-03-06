@@ -43,6 +43,7 @@ CMakeFiles/main.dir/src/chip8.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
@@ -65,6 +66,16 @@ CMakeFiles/main.dir/src/chip8_memory.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
+CMakeFiles/main.dir/src/chip8_screen.c.o
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_screen.c
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_posix_availability.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
+
 CMakeFiles/main.dir/src/chip8_stack.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/chip8_stack.c
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h
@@ -76,6 +87,7 @@ CMakeFiles/main.dir/src/chip8_stack.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
@@ -278,6 +290,7 @@ CMakeFiles/main.dir/src/main.c.o
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h
+ /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_screen.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h
  /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/config.h
 
