@@ -21,7 +21,32 @@ void chip8_init(chip8 *chip8_) {
          sizeof(chip8_default_char_set));
 }
 
-void chip8_exec(chip8 *chip8, unsigned short opcode) {}
+static void chip8_exec_extended(chip8 *chip8, unsigned short opcode) {
+  unsigned short nnn = opcode & 0x0fff;
+
+  switch (opcode & 0xf000) {
+  case 0x1000:
+    chip8->registers.PC = nnn;
+    break;
+  }
+}
+
+void chip8_exec(chip8 *chip8, unsigned short opcode) {
+  switch (opcode) {
+  // clear screen
+  case 0x00E0:
+    chip8_screen_clear(&chip8->screen);
+    break;
+
+  // return from subroutine
+  case 0x00EE:
+    chip8->registers.PC = chip8_stack_pop(chip8);
+    break;
+
+  default:
+    chip8_exec_extended(chip8, opcode);
+  }
+}
 
 void chip8_load(chip8 *chip8_, const char *buf, size_t size) {
   assert(size + CHIP8_PROGRAM_LOAD_ADDR < CHIP8_MEMORY_SIZE);

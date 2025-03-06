@@ -1,10 +1,15 @@
 #include "chip8_screen.h"
 
 #include <assert.h>
+#include <memory.h>
 #include <stdbool.h>
 
 static void chip8_screen_is_bounds(int x, int y) {
   assert(x >= 0 && x < CHIP8_SCREEN_WIDTH && y >= 0 && y < CHIP8_SCREEN_HEIGHT);
+}
+
+void chip8_screen_clear(chip8_screen *screen) {
+  memset(screen->pixels, 0, sizeof(screen->pixels));
 }
 
 void chip8_screen_set(chip8_screen *screen, int x, int y) {
