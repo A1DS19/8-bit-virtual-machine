@@ -24,14 +24,14 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  SDL_Window *window = SDL_CreateWindow(
-      CHIP8_SCREEN_TITLE,       // Window title
-      SDL_WINDOWPOS_UNDEFINED,  // Initial x position (centered)
-      SDL_WINDOWPOS_UNDEFINED,  // Initial y position (centered)
-      CHIP8_WINDOW_MW,          // Width
-      CHIP8_WINDOW_MH,          // Height
-      SDL_WINDOW_SHOWN          // Flags (show the window)
-  );
+  SDL_Window *window =
+      SDL_CreateWindow(CHIP8_SCREEN_TITLE,      // Window title
+                       SDL_WINDOWPOS_UNDEFINED, // Initial x position (centered)
+                       SDL_WINDOWPOS_UNDEFINED, // Initial y position (centered)
+                       CHIP8_WINDOW_MW,         // Width
+                       CHIP8_WINDOW_MH,         // Height
+                       SDL_WINDOW_SHOWN         // Flags (show the window)
+      );
 
   if (!window) {
     fprintf(stderr, "Error creating window: %s\n", SDL_GetError());
@@ -47,26 +47,26 @@ int main(int argc, char *argv[]) {
   while (running) {
     while (SDL_PollEvent(&event)) {
       switch (event.type) {
-        case SDL_QUIT:
-          running = 0;
-          break;
+      case SDL_QUIT:
+        running = 0;
+        break;
 
-        case SDL_KEYDOWN: {
-          char key = event.key.keysym.sym;
-          int vkey = chip8_keyboard_map(keyboard_map, key);
-          if (vkey != -1) {
-            chip8_keyboard_down(&chip8.keyboard, vkey);
-          }
-        } break;
+      case SDL_KEYDOWN: {
+        char key = event.key.keysym.sym;
+        int vkey = chip8_keyboard_map(keyboard_map, key);
+        if (vkey != -1) {
+          chip8_keyboard_down(&chip8.keyboard, vkey);
+        }
+      } break;
 
-        case SDL_KEYUP: {
-          char key = event.key.keysym.sym;
-          int vkey = chip8_keyboard_map(keyboard_map, key);
-          if (vkey != -1) {
-            chip8_keyboard_up(&chip8.keyboard, vkey);
-          }
+      case SDL_KEYUP: {
+        char key = event.key.keysym.sym;
+        int vkey = chip8_keyboard_map(keyboard_map, key);
+        if (vkey != -1) {
+          chip8_keyboard_up(&chip8.keyboard, vkey);
+        }
 
-        } break;
+      } break;
       }
     }
 
