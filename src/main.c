@@ -11,6 +11,7 @@
 #include "chip8.h"
 #include "chip8_audio.h"
 #include "chip8_keyboard.h"
+#include "chip8_memory.h"
 #include "chip8_screen.h"
 #include "config.h"
 
@@ -19,6 +20,30 @@ const char keyboard_map[CHIP8_KEYBOARD_TOTAL_KEYS] = {
     SDLK_9, SDLK_a, SDLK_b, SDLK_c, SDLK_d, SDLK_e, SDLK_f};
 
 int main(int argc, char *argv[]) {
+  if (argc < 2) {
+    printf("Please add file to load");
+    return EXIT_FAILURE;
+  }
+
+  const char *filename = argv[1];
+  FILE *file = fopen(filename, "r");
+
+  if (!file) {
+    printf("failed to open file");
+    return EXIT_FAILURE;
+  }
+
+  fseek(file, 0, SEEK_END);
+  long size = ftell(file);
+  fseek(file, 0, SEEK_SET);
+
+  char buf[size];
+  int res = fread(buf, size, 1, file);
+  if (res != 1) {
+    printf("failed to red from file");
+    return EXIT_FAILURE;
+  }
+
   SDL_AudioSpec desired_spec;
   SDL_zero(desired_spec);
   desired_spec.freq = SAMPLE_RATE;
@@ -29,7 +54,7 @@ int main(int argc, char *argv[]) {
 
   chip8 chip8;
   chip8_init(&chip8);
-  chip8.registers.sound_timer = 3;
+  chip8_load(&chip8, buf, size);
 
   chip8_screen_draw_sprite(&chip8.screen, 0, 0, &chip8.memory.memory[0x00], 5);
 
@@ -121,6 +146,11 @@ int main(int argc, char *argv[]) {
     } else {
       SDL_PauseAudio(1);
     }
+
+    unsigned short opcode =
+        chip8_memory_get_short(&chip8.memory, chip8.registers.PC);
+    chip8_exec(&chip8, opcode);
+    chip8.registers.PC += 2;
   }
 
   SDL_DestroyWindow(window);

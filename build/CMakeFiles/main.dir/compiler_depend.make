@@ -9,6 +9,7 @@ CMakeFiles/main.dir/src/chip8.c.o: /Users/jose.padilla/Desktop/courses/8-bit-vir
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/memory.h \
@@ -38,6 +39,7 @@ CMakeFiles/main.dir/src/chip8.c.o: /Users/jose.padilla/Desktop/courses/8-bit-vir
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
@@ -227,6 +229,7 @@ CMakeFiles/main.dir/src/chip8_stack.c.o: /Users/jose.padilla/Desktop/courses/8-b
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_keyboard.h \
   /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h \
@@ -608,12 +611,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ino_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_in_port_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_useconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_id_t.h:
@@ -649,6 +646,8 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_fd_clr.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blksize_t.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_gamecontroller.h:
 
@@ -724,8 +723,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/signal.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blksize_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_va_list.h:
@@ -768,6 +765,12 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/secure/_string.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_bf16.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_rwops.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityMacros.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_dev_t.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_stack.h:
@@ -777,12 +780,6 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_registers.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/arm_bf16.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_rwops.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/AvailabilityMacros.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_memory.h:
 
@@ -832,39 +829,45 @@ CMakeFiles/main.dir/src/main.c.o: /Users/jose.padilla/Desktop/courses/8-bit-virt
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_int32_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ct_rune_t.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_audio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigaltstack.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_haptic.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
-
-/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h:
-
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_config.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_timespec.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_sigaltstack.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/types.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_assert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/arm/_mcontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/signal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_endian.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/memory.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/Availability.h:
 
 /Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/src/main.c:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/memory.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/chip8_audio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types.h:
+
+/Users/jose.padilla/Desktop/courses/8-bit-virtual-machine/include/SDL2/SDL_haptic.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/machine/types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_in_port_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
