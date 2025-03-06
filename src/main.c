@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
   chip8 chip8;
   chip8_init(&chip8);
-  chip8.registers.sound_timer = 255;
+  chip8.registers.sound_timer = 3;
 
   chip8_screen_draw_sprite(&chip8.screen, 0, 0, &chip8.memory.memory[0x00], 5);
 
@@ -116,6 +116,10 @@ int main(int argc, char *argv[]) {
 
     if (chip8.registers.sound_timer > 0) {
       SDL_PauseAudio(0);
+      sleep(1);
+      chip8.registers.sound_timer -= 1;
+    } else {
+      SDL_PauseAudio(1);
     }
   }
 
