@@ -23,6 +23,19 @@ void chip8_init(chip8 *chip8_) {
          sizeof(chip8_default_char_set));
 }
 
+static void chip8_exec_extented_8(chip8 *chip8, unsigned short opcode) {
+  unsigned char x = (opcode >> 8) & 0x000f;
+  unsigned char y = (opcode >> 4) & 0x000f;
+  unsigned char final_4_bits = opcode & 0x000f;
+
+  switch (final_4_bits) {
+  // 8xy0 - ld vx, vy, vx = vy
+  case 0x00:
+    chip8->registers.V[x] = chip8->registers.V[y];
+    break;
+  }
+}
+
 static void chip8_exec_extended(chip8 *chip8, unsigned short opcode) {
   unsigned short nnn = opcode & 0x0fff;
   unsigned char x = (opcode >> 8) & 0x000f;
@@ -73,6 +86,7 @@ static void chip8_exec_extended(chip8 *chip8, unsigned short opcode) {
     break;
 
   case 0x8000:
+    chip8_exec_extented_8(chip8, opcode);
     break;
   }
 }
