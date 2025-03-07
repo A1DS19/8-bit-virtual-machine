@@ -3,6 +3,8 @@
 #include <assert.h>
 #include <memory.h>
 
+#include "chip8_stack.h"
+
 const char chip8_default_char_set[] = {
     0xf0, 0x90, 0x90, 0x90, 0xf0, 0x20, 0x60, 0x20, 0x20, 0x70, 0xf0, 0x10,
     0xf0, 0x80, 0xf0, 0xf0, 0x10, 0xf0, 0x10, 0xf0, 0x90, 0x90, 0xf0, 0x10,
@@ -23,10 +25,54 @@ void chip8_init(chip8 *chip8_) {
 
 static void chip8_exec_extended(chip8 *chip8, unsigned short opcode) {
   unsigned short nnn = opcode & 0x0fff;
+  unsigned char x = (opcode >> 8) & 0x000f;
+  unsigned char y = (opcode >> 4) & 0x000f;
+  unsigned char kk = opcode & 0x00ff;
 
   switch (opcode & 0xf000) {
+  // jmp to location nnn
   case 0x1000:
     chip8->registers.PC = nnn;
+    break;
+
+  // call subroutine, at location nnn
+  case 0x2000:
+    chip8_stack_push(chip8, chip8->registers.PC);
+    chip8->registers.PC = nnn;
+    break;
+
+  // SE Vx, byte - 3xSkip next instruction if Vx=kk
+  case 0x3000:
+    if (chip8->registers.V[x] == kk) {
+      chip8->registers.PC += 2;
+    }
+    break;
+
+    // SE Vx, byte - 3xSkip next instruction if Vx!=kk
+  case 0x4000:
+    if (chip8->registers.V[x] != kk) {
+      chip8->registers.PC += 2;
+    }
+    break;
+
+  // 5xy0 - SE, vx, vy, skip the next isntruction if vx = vy
+  case 0x5000:
+    if (chip8->registers.V[x] == chip8->registers.V[y]) {
+      chip8->registers.PC += 2;
+    }
+    break;
+
+  // LD Vx, byte = kk
+  case 0x6000:
+    chip8->registers.V[x] = kk;
+    break;
+
+  // 7xkk - add Vx byte, set vx += kk
+  case 0x7000:
+    chip8->registers.V[x] += kk;
+    break;
+
+  case 0x8000:
     break;
   }
 }
