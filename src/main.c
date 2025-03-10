@@ -55,6 +55,7 @@ int main(int argc, char *argv[]) {
   chip8 chip8;
   chip8_init(&chip8);
   chip8_load(&chip8, buf, size);
+  chip8_keyboard_set_map(&chip8.keyboard, keyboard_map);
 
   if (SDL_Init(SDL_INIT_EVERYTHING)) {
     fprintf(stderr, "Error initializing SDL: %s\n", SDL_GetError());
@@ -96,7 +97,7 @@ int main(int argc, char *argv[]) {
 
       case SDL_KEYDOWN: {
         char key = event.key.keysym.sym;
-        int vkey = chip8_keyboard_map(keyboard_map, key);
+        int vkey = chip8_keyboard_map(&chip8.keyboard, key);
         if (vkey != -1) {
           chip8_keyboard_down(&chip8.keyboard, vkey);
         }
@@ -104,7 +105,7 @@ int main(int argc, char *argv[]) {
 
       case SDL_KEYUP: {
         char key = event.key.keysym.sym;
-        int vkey = chip8_keyboard_map(keyboard_map, key);
+        int vkey = chip8_keyboard_map(&chip8.keyboard, key);
         if (vkey != -1) {
           chip8_keyboard_up(&chip8.keyboard, vkey);
         }
@@ -133,7 +134,7 @@ int main(int argc, char *argv[]) {
     SDL_RenderPresent(renderer);
 
     if (chip8.registers.delay_timer > 0) {
-      usleep(100000);
+      usleep(10000);
       chip8.registers.delay_timer -= 1;
     }
 

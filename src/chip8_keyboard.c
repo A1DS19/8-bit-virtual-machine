@@ -2,13 +2,17 @@
 
 #include <assert.h>
 
+void chip8_keyboard_set_map(chip8_keyboard *keyboard, const char *map) {
+  keyboard->keyboard_map = map;
+}
+
 static void chip8_keyboard_is_bounds(int key) {
   assert(key >= 0 && key < 0x0f);
 }
 
-int chip8_keyboard_map(const char *map, char key) {
+int chip8_keyboard_map(chip8_keyboard *keyboard, char key) {
   for (int i = 0; i < CHIP8_KEYBOARD_TOTAL_KEYS; i++) {
-    if (map[i] == key) {
+    if (keyboard->keyboard_map[i] == key) {
       return i;
     }
   }
