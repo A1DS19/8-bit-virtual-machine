@@ -134,7 +134,7 @@ int main(int argc, char *argv[]) {
     SDL_RenderPresent(renderer);
 
     if (chip8.registers.delay_timer > 0) {
-      usleep(10000);
+      usleep(100);
       chip8.registers.delay_timer -= 1;
     }
 
